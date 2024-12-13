@@ -3,6 +3,7 @@
 ## Project Overview
 
 This Spring Boot application is a Forex Data Scraper and API that retrieves historical currency exchange rate data from Yahoo Finance. The application automatically scrapes and stores forex data for multiple currency pairs, providing an easy-to-use API for accessing historical exchange rates.
+
 Deployed URL: http://ec2-3-110-222-5.ap-south-1.compute.amazonaws.com:3000/api/forex-data
 
 Example Body:
