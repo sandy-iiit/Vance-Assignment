@@ -38,8 +38,9 @@ public class VanceAssignmentApplication implements CommandLineRunner {
 		scraperService.scrapeData("EURINR=X", startDate, endDate);
 	}
 
-	    @Scheduled(cron = "0 0 0 * * ?") // Daily at midnight
+//	    @Scheduled(cron = "0 0 0 * * ?") // Daily at midnight
 //	@Scheduled(cron = "0 0/2 * * * ?") // Every 2 minutes
+	@Scheduled(cron = "0 0 */2 * * ?") // Every 2 hours
 	public void scrapeDailyData() {
 		forexDataRepository.deleteAll();
 
